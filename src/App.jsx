@@ -52,7 +52,8 @@ const Home = () => {
 
 function App() {
   return (
-    <Router>
+   
+    
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<AboutTopHeader />} />
@@ -63,7 +64,8 @@ function App() {
         <Route path="/login" element={<LoginMain />} />
         <Route path="/register" element={<RegisterMain />} />
       </Routes>
-    </Router>
+   
+    
   );
 }
 
