@@ -1,0 +1,569 @@
+@font-face {
+    font-family: 'Popins-bold';
+    src: url('../assets/Poppins-Bold.ttf'),
+
+
+}
+
+@font-face {
+    font-family: 'Popins-light';
+    src: url('../assets/Poppins-Light.ttf'),
+
+
+}
+
+@font-face {
+    font-family: 'Popins-medium';
+    src: url('../assets/Poppins-Medium.ttf'),
+
+
+}
+
+
+
+.footer-data {
+    font-size: 0.7vw;
+
+}
+
+.footer-links .col-2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.footer-links .col-2 ul li {
+    list-style: none;
+}
+
+.footer-links-sm li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.footer-links-sm li {
+    list-style: none;
+}
+
+.footer-links .col-2 label {
+    padding-bottom: 10%;
+}
+
+.footer-links-sm label {
+    padding-bottom: 10%;
+}
+
+/* css of newletter component starts here
+css of newletter component starts here
+css of newletter component starts here */
+
+.news-background {
+    background: linear-gradient(to left, #E2F3FF, #fffede);
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.newsletter-form-bg {
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.newsletter-form-bg .form-control {
+    background-color: black;
+    border: none;
+    padding: 0 0 0 1%;
+}
+
+.newsletter-form-bg .form-control::placeholder {
+    color: gray;
+    font-family: Popins-medium;
+    font-style: italic;
+    font-size: 1vw;
+}
+
+.newsletter-subscribe-heading {
+    font-family: Popins-medium;
+    font-size: 2vw;
+}
+
+.newsletter-subscribe-heading span {
+    font-family: Popins-bold;
+}
+
+.newsletter-subscribe-para {
+    font-family: Popins-medium;
+    font-size: 1.1vw;
+    color: #555756;
+}
+
+.newsletter-subscribe-button {
+    font-family: Popins-medium;
+    font-size: 1vw;
+    margin-left: 1%;
+}
+
+@media (max-width: 768px) {
+    .newsletter-form-bg .form-control::placeholder {
+
+        font-size: 8px;
+    }
+
+    .newsletter-subscribe-button {
+        font-size: 8px;
+
+    }
+    .newsletter-subscribe-para {
+       text-align: center;
+       font-size: 6px;
+    }
+    .newsletter-subscribe-heading {
+        text-align: center;
+       font-size: 10px;
+       margin-bottom: 0;
+    }
+}
+
+/* css of Faq component starts here */
+/* css of Faq component starts here */
+/* css of Faq component starts here */
+.faq-frequently{
+    font-family: Popins-medium;
+    font-size: 2vw;
+}
+.faq-frequently span{
+    font-family: Popins-bold;
+}
+.faq-background {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.faq-background .faq-main-accordion {
+    margin-top: 5%;
+    font-family: Popins-medium ;
+    font-size: 1vw;
+}
+
+.accordion-button {
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+}
+
+@media  (max-width : 748px) {
+    .faq-frequently{
+        font-size: 16px;
+    }    
+    .faq-background .faq-main-accordion {       
+        font-size: 10px;
+    }
+}
+
+/* Center the accordion */
+/* Center the entire accordion */
+.faq-background .accordion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+/* Restrict the width of the accordion */
+.faq-background .accordion-container .accordion {
+    width: 50%;
+  
+    /* Adjust as needed */
+    max-width: 600px;
+    /* Prevents it from being too wide */
+}
+
+/* Ensure the accordion body takes full width inside the accordion */
+.faq-background .accordion-container .accordion-body {
+    width: 100%;
+    /* Makes the content take full width */
+    display: block;
+    /* Ensures full width usage */
+    text-align: left;
+    /* Optional: Adjust text alignment */
+    
+}
+
+
+
+
+
+
+
+/* css of LearnMore component starts here
+css of LearnMore component starts here */
+.learn-main {
+    background-color: #f5f5f5;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 30px !important;   
+    color: #006CFF !important;
+
+}
+
+.slick-prev:before {
+    margin-left: -92%;
+}
+.learn-more{
+    font-family: Popins-medium;
+    font-size: 2vw;
+    margin-top: 2%;
+    margin-bottom:4%;
+}
+.learn-more span{
+    font-family: Popins-bold;
+}
+/* css of TurnBar component starts here
+css of TurnBar component starts here */
+.turn-bar-background {
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.turn-bizlantic-for-bold-font {
+    font-family: Popins-bold;
+    font-size: 1.5vw;
+}
+
+.turn-bizlantic-for-medium-font {
+    font-family: Popins-medium;
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+
+
+
+
+
+
+/* Askquestion component css starts here
+Askquestion component css starts here */
+.ask-question-background {
+    background: linear-gradient(to left, #E2F3FF, #fffede);
+    padding: 5%;
+
+}
+
+.AqFirst {
+    color: #006CFF;
+    font-size: 1.2vw;
+    font-family: Popins-medium;
+}
+
+.AqSecond {
+    font-size: 2vw;
+    font-family: Popins-medium;
+    margin: 0%;
+}
+
+.AqThird {
+    font-size: 2vw;
+    font-family: Popins-bold;
+}
+
+.AqFourth {
+    font-size: 1vw;
+    font-family: Popins-medium;
+}
+
+.AqFifth {
+    font-size: 1vw;
+    font-family: Popins-medium;
+    margin: 0%;
+}
+
+.AqSixth {
+    font-size: 1vw;
+    font-family: Popins-light;
+}
+
+.AqSeventh {
+    font-size: 1vw;
+    font-family: Popins-medium;
+    margin: 0%;
+}
+
+.AqEight {
+    font-size: 1vw;
+    font-family: Popins-light;
+}
+
+.AqNinth {
+    font-size: 1vw;
+    font-family: Popins-medium;
+    margin: 0%;
+}
+
+.AqTenth {
+    font-size: 1vw;
+    font-family: Popins-light;
+}
+
+.Askquestion-form-label{
+    font-family: Popins-bold;
+    font-size: 1.2vw;
+}
+.Askquestion-form-main label{
+    font-family: Popins-medium;
+    font-size: 1vw;
+}
+
+
+/* Footer white logo part starts here
+Footer white logo part starts here
+Footer white logo part starts here */
+
+.Whitelogo {
+    width: 100%;
+}
+
+.footer-connect-us a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+
+}
+
+.footer-connect-us p {
+    font-family: Popins-medium;
+    font-size: 16px;
+
+}
+
+.footer-num-mail {
+    font-family: Popins-medium;
+    font-size: 16px;
+}
+
+.home-login-btn button {
+    font-family: Popins-medium;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+    /* Styles applied when the screen width is 768px or smaller */
+    .Whitelogo {
+        width: 50%;
+    }
+
+    .home-white-logo-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-login-btn {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .footer-num-mail {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* css of client say component starts here
+css of client say component starts here
+css of client say component starts here */
+
+
+.client-say-first-card{
+    font-family: Popins-medium;
+    font-style:italic;
+    font-size: 14px;
+    padding: 19px 17px 11px 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Background for the ask question section */
+.ask-question-background {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+/* Text section styling */
+.ask-question-text p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.aq-first {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.aq-second, .aq-third {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+}
+
+.aq-fourth, .aq-fifth, .aq-sixth, .aq-seventh, .aq-eight, .aq-ninth, .aq-tenth {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Form Container */
+.ask-question-form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Heading */
+.ask-question-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Form Input Styling */
+.ask-form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+}
+
+/* Placeholder Styling */
+.ask-form-control::placeholder {
+    color: #a0a0a0;
+    font-style: italic;
+}
+
+/* Button Styling */
+.ask-btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 748px) {
+    .ask-question-form {
+        width: 100%;
+    }
+}

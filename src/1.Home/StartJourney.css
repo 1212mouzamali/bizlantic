@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'Popins-bold';
+    src: url('../assets/Poppins-Bold.ttf'),
+
+
+}
+
+@font-face {
+    font-family: 'Popins-light';
+    src: url('../assets/Poppins-Light.ttf'),
+
+
+}
+
+@font-face {
+    font-family: 'Popins-medium';
+    src: url('../assets/Poppins-Medium.ttf'),
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.select-div {
+
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.LookDubai {
+    font-family: 'Popins-light';
+    color: #006CFF;
+    font-size: 0.9vw;
+}
+
+.StartYour {
+    font-family: 'Popins-light';
+    font-size: 3.6vw;
+    margin: 0%;
+}
+
+.BusJo {
+    font-family: 'Popins-bold';
+    font-size: 3.6vw;
+    line-height: 48px;
+    margin-bottom: 7%;
+}
+
+.Help {
+    font-family: 'Popins-medium';
+    font-size: 1.1vw;
+
+}
+
+.StartJourney-for-grid {
+    padding-top: 8%;
+}
+
+.for-position-img-burj-img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+}
+
+.for-position-img {
+   
+    width: 400px;
+    height: 450px;
+    border-radius: 10px
+}
+
+.for-position-main {
+    position: relative;
+}
+
+.main-burj-img {
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 8%;
+    right: 27%;
+
+}
+
+.for-position-img {
+    width: 355px;
+    height: 450px;
+    border-radius: 12px;
+    position: relative;
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+    
+    /* Adjust this value for the border thickness */
+}
+
+.for-position-img::before {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    /* Creates an inner cutout effect */
+    background-color: white;
+    /* Adjust this to match the background */
+    border-radius: 12px;
+}
+
+/* css of StartJourney component starts here
+css of StartJourney component starts here
+css of StartJourney component starts here */
+.reg-bar {
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+    margin-top: 5%;
+}
+
+.register-para {
+    font-family: 'Popins-medium';
+    font-size: 1vw;
+    
+
+}
+
+.register-para p {
+    margin: 0;
+}
+
+.register-now {
+    font-family: 'Popins-medium';
+    font-size: 1vw;
+    color: white;
+  
+}
+
+.register-now a {
+    color: white;
+
+}
+
+
+/* CSS of WhyUs omponent starts here
+CSS of WhyUs omponent starts here
+CSS of WhyUs omponent starts here */
+.whyus-main {
+    /* background: linear-gradient(to left, #006CFF, #FFFF00); */
+    background: linear-gradient(to right, rgb(254, 254, 230), rgb(242, 247, 242), rgb(160, 204, 233));
+
+}
+
+.who-are-we {
+    font-family: 'Popins-medium';
+    font-size: 1vw;
+    color: #006CFF;
+    ;
+
+}
+
+.we-r-biz {
+    font-family: 'Popins-light';
+    font-size: 3vw;
+}
+
+.we-r-biz span {
+    font-family: 'Popins-bold';
+    font-size: 3vw;
+}
+
+.who-dec {
+    font-family: 'Popins-medium';
+    font-size: 1vw;
+    color: #555756;
+}
+
+.who-di {
+    font-family: 'Popins-medium';
+    font-size: 1vw;
+    color: #555756;
+    word-spacing: -3px;
+    text-align: justify;
+
+}
+
+.who-la {
+    font-family: 'Popins-medium';
+    font-size: 1vw;
+    color: #555756;
+}
+
+.who-off {
+    font-family: 'Popins-medium';
+    font-size: 1vw;
+    color: #555756;
+
+}
+
+.whyus-main {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.why-btn-span {
+    font-family: 'Popins-medium';
+    font-size: 1vw;
+
+}
+
+.why-btn {
+    margin-left: 30px;
+    font-family: Popins-medium;
+    font-size: 0.9vw;
+}
+
+.why-btn-1 {
+
+    font-family: Popins-medium;
+    font-size: 0.9vw;
+}
+
+
+
+/* css of UAecost component starts here
+ css of UAecost component starts here
+ css of UAecost component starts here */
+.Uae-main {
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.Uae-calc {
+    color: #006CFF;
+    font-family: 'Popins-medium';
+    font-size: 1vw;
+
+}
+
+.Uae-how {
+    font-family: 'Popins-medium';
+    font-size: 2.3vw;
+    margin: 0%;
+
+}
+
+.Uae-setup {
+    font-family: 'Popins-bold';
+    font-size: 2.3vw;
+
+
+}
+
+.Uae-help {
+    font-family: 'Popins-medium';
+    font-size: 1vw;
+    color: #555756;
+}
+
+.Uae-cost-calc-label {
+    font-family: 'Popins-medium';
+    font-size: 1.5vw;
+    color: #2b2c2c;
+}
+
+
+
+
+
+.custom-select-wrapper {
+    display: inline-block;
+    position: relative;
+    padding: 2px;
+    /* Space for the border */
+    border-radius: 8px;
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+    /* Gradient Border */
+    width: 100%;
+    /* Ensure wrapper takes full width */
+}
+
+.custom-select {
+    border: none;
+    outline: none;
+    width: 100%;
+    /* Make sure it fills the wrapper */
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: white;
+    /* Keep background */
+    appearance: none;
+    /* Remove default styles */
+    display: block;
+}
+
+
+
+/* css of OurServices component starts here
+  css of OurServices component starts here
+  css of OurServices component starts here */
+.OurServices-heading {
+    font-family: Popins-medium;
+    font-size: 2.5vw;
+}
+
+.OurServices-heading span {
+    font-family: Popins-bold;
+    font-size: 2.5vw;
+}
+
+.OurServices-para {
+    font-family: Popins-medium;
+    font-size: 1vw;
+    color: #555756;
+}
+
+
+/* css of free consultation component starts here
+    css of free consultation component starts here
+    css of free consultation component starts here */
+
+.free-consultation-main {
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.cons-top {
+    font-family: Popins-medium;
+    font-size: 1vw;
+    margin: 0%;
+
+}
+
+.cons-bottom {
+    font-family: Popins-bold;
+    font-size: 2vw;
+    margin: 0%;
+
+
+}
+
+.cons-contact {
+    font-family: Popins-medium;
+    font-size: 1vw;
+    color: white;
+}
