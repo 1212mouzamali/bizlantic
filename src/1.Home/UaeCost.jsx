@@ -6,8 +6,8 @@ const UaeCost = () => {
         <div className='Uae-main bg-light'>
             <div className="container">
                 <div className="row">
-                    <div className="col-1"></div>
-                    <div className="col-5">
+                   
+                    <div className="col-md-5 offset-md-1">
                         <p className='Uae-calc' >COST CALCULATOR</p>
                         <p className='Uae-how'>HOW MUCH DOES</p>
                         <p className='Uae-setup'>BUSINESS SETUP IN UAE COST?</p>

@@ -4,10 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {Link} from 'react-router-dom';
 
-import './TopHeader.css';
 import Blacklogo from '../assets/Blacklogo.png';
 
-function HeaderNav() { 
+function CostHeaderNav() { 
     return (
         <>
         <Navbar expand="lg" className="bg-body-tertiary border shadow">
@@ -49,7 +48,7 @@ function HeaderNav() {
                         <Nav.Link href="#home">Golden Visa</Nav.Link>
                         <Nav.Link href="#link">Citizenship</Nav.Link>
                         <Nav.Link as={Link} to="/login">  Login  </Nav.Link>
-                        <Nav.Link as={Link} to="/costcalc" className=' cost-calc-btn border rounded text-center'>Cost Calculator </Nav.Link>
+                        <Nav.Link as={Link} to="/" className=' cost-calc-btn border rounded text-center'>{'<'} Back to Website </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -58,4 +57,4 @@ function HeaderNav() {
     );
 }
 
-export default HeaderNav;
+export default CostHeaderNav;

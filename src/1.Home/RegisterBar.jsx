@@ -13,7 +13,7 @@ const RegisterBar = () => {
                 </div>
                 <div className="col-1"></div>
                 <div className="col-2 register-now text-center">
-                    <a href="#">Register Now</a>
+                    <Link to= "/register" >Register Now</Link>
                 </div>
             </div>
            </div>

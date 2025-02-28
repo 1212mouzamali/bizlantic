@@ -34,7 +34,7 @@ const LearnMore = () => {
                     <div className="col-10 learn-slick">
                         <Slider {...settings}>
                             <div >
-                                <Card style={{ width: '20rem' }} className='shadow'>
+                                <Card style={{ width: '20rem' }} >
                                     <Card.Img variant="top" src={Burjimg} />
                                     <Card.Body>
                                         <Card.Title>Golden Visa</Card.Title>
@@ -50,7 +50,7 @@ const LearnMore = () => {
                                 </Card>
                             </div>
                             <div>
-                                <Card style={{ width: '20rem' }} className='shadow'>
+                                <Card style={{ width: '20rem' }} >
                                     <Card.Img variant="top" src={Burjimg} />
                                     <Card.Body>
                                         <Card.Title>Citizenship</Card.Title>
@@ -63,7 +63,7 @@ const LearnMore = () => {
                                 </Card>
                             </div>
                             <div>
-                                <Card style={{ width: '20rem' }} className='shadow'>
+                                <Card style={{ width: '20rem' }} >
                                     <Card.Img variant="top" src={Burjimg} />
                                     <Card.Body>
                                         <Card.Title>Corp. Tax & VAT

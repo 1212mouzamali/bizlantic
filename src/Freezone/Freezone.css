@@ -1,0 +1,48 @@
+
+.freezone-cost{
+    font-family: Popins-medium;
+    text-decoration: none;
+   width: 12rem;
+    color: white;
+}
+.freezone-cost-main{
+    display: flex;
+     justify-content: space-evenly;
+    
+ }
+.freezoneLooking{
+    font-family:Popins-medium ;
+    color: #006CFf;
+}
+.freezoneSetup{
+    font-family:Popins-bold ;
+    font-size: calc(3vw + 5px);
+}
+.freezoneStart{
+    font-family:Popins-medium ;
+}
+.freezoneImg{
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    .freezoneSetup{
+        font-size: calc(3vw + 5px);
+        text-align: center;
+    }
+    .freezoneLooking{
+        text-align: center;
+    }
+    .freezoneStart{
+        text-align: center;
+        font-size: 12px;
+    }
+    .freezoneImg{
+        margin-top: 8%;
+    }
+    .freezone-cost{
+        margin: 4px;
+    }
+   
+    
+}

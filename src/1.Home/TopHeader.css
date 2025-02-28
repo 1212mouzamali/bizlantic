@@ -23,40 +23,51 @@
 
 
 }
-.blacklogo{
-    width: 100%;
+@font-face {
+    font-family: 'Popins-regular';
+    src: url('../assets/Poppins-Regular.ttf'),
+
+
 }
+@font-face {
+    font-family: 'Popins-semibold';
+    src: url('../assets/Poppins-SemiBold.ttf'),
+
+
+}
+
 
 .top-header-list li a{
    text-decoration: none;
    color: white;
 }
 .top-header-list{
-    list-style: none;
-    padding: 8px;
-    margin: 0px;
-    display:flex;
-    justify-content: end;
+    list-style: none;   
+    margin-bottom: 0px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 1vw;
+
 }
 .top-header-list li{
     color: white;
     margin-left: 1%;
-    font-size: 1vw;
-    font-family: Popins-medium;
+     font-size: calc(0.8vw + 5px);
+    font-family: Popins-regular;
 }
-.main-top-header{
-    width: 100%;
+.main-top-header{   
     background: linear-gradient(to left, #006CFF, #FFFF00);
 }
 
 
 @media (max-width: 600px) {  
     .top-header-list {
-        display: flex;
-        justify-content:center;
-        font-size: 14px;
-     
+               font-size: 9px ;               
+               justify-content: center !important;
     }
+   .top-header-list li{
+    margin-left: 8px;
+   }
 }
 
 
@@ -68,12 +79,18 @@
 css HeaderNav component starts here
 css HeaderNav component starts here
 css HeaderNav component starts here */
+.blacklogo{
+    width: 90%;
+}
+
 
 .nav-main a{
-     font-family: Popins-light;
-     color: black;
+     font-family: Popins-semibold;  
     width: 180px;
-    padding-top: 15px;
-    padding-bottom: 0%;
      
+}
+
+.cost-calc-btn{
+    background-color: #006CFF;
+    color: white !important;
 }

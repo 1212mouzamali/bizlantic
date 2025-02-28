@@ -1,0 +1,33 @@
+.cost-calc-main{
+    /* background: url("../assets/map.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.g-logo-cost-calc{
+    width: 50%;
+}
+
+.cost-calc-heading{
+    font-family: Popins-medium;
+    font-size: 3vw;
+}
+.cost-calc-select-label{
+    font-family: Popins-bold;
+    margin-bottom: 0.7rem;
+    margin-top: 4%;
+}
+
+
+.costcalc-negative{
+    border: none;
+    background-color: #e3e63b;
+    font-size: 15px;
+ 
+}
+.costcalc-positive{
+    border: none;
+    background-color: #1379ed;
+    
+}

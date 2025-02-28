@@ -22,45 +22,45 @@
 
 
 .footer-data {
-    font-size: 0.7vw;
+    font-size: calc(0.7vw + 1px);
+    font-family: Popins-light;
 
 }
+@media (max-width : 600px) {
+    .footer-data{
+       
+       text-align: center;
+    }
+}
 
-.footer-links .col-2 ul li a {
+.footer-links .col-md-2 ul li a {
+    font-family: Popins-light;
     text-decoration: none;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.footer-links .col-2 ul li {
+.footer-links .col-md-2 ul li {
     list-style: none;
 }
 
-.footer-links-sm li a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
+.footer-links .col-md-2 label {
+    padding-bottom: 3%;
+    font-family: Popins-semibold;
 }
 
-.footer-links-sm li {
-    list-style: none;
-}
 
-.footer-links .col-2 label {
-    padding-bottom: 10%;
+@media (max-width:600px) {
+    .footer-links .col-md-2{
+        text-align: center;
+    }
 }
-
-.footer-links-sm label {
-    padding-bottom: 10%;
-}
-
 /* css of newletter component starts here
 css of newletter component starts here
 css of newletter component starts here */
 
 .news-background {
     background: linear-gradient(to left, #E2F3FF, #fffede);
-
     padding-top: 5%;
     padding-bottom: 5%;
 }

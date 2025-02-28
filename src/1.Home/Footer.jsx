@@ -6,46 +6,38 @@ const Footer = () => {
         < div className="bg-dark text-white">
             <div className="container pt-5">
                 <div className="row footer-links">
-                    <div className="col-2">
+                    <div className="col-md-2 mt-2">
                         <ul>
                             <label>Business Setup</label>
                             <li><a href="#">Freezone License</a></li>
                             <li><a href="#">Mainland License</a></li>
                             <li><a href="#">Offshore License</a></li>
-
-
                         </ul>
                     </div>
-                    <div className="col-2">
+                    <div className="col-md-2  mt-2">
                         <ul>
-                            <label>Business Setup</label>
-                            <li><a href="#">Freezone License</a></li>
-                            <li><a href="#">Mainland License</a></li>
-                            <li><a href="#">Offshore License</a></li>
-
-
+                            <label>Finance Service</label>
+                            <li><a href="#">Corporate Tax</a></li>
+                            <li><a href="#">VAT Resgistration</a></li>
+                            <li><a href="#">Bank Account Assist</a></li>
                         </ul>
                     </div>
-                    <div className="col-2">
+                    <div className="col-md-2  mt-2">
                         <ul>
                             <label>Residence</label>
                             <li><a href="#">Golden Visa</a></li>
                             <li><a href="#">Citizenship</a></li>
-
-
                         </ul>
                     </div>
-                    <div className="col-sm-2 footer-links-sm">
+                    <div className="col-md-2  mt-2">
                         <ul >
                             <label> Digital</label>
                             <li><a href="#">Digital Marketing</a></li>
                             <li><a href="#">Social Media Management</a></li>
                             <li><a href="#">Website & App Development</a></li>
-
-
                         </ul>
                     </div>
-                    <div className="col-2">
+                    <div className="col-md-2  mt-2">
                         <ul>
                             <label> Info</label>
                             <li><a href="#">About Us</a></li>
@@ -54,7 +46,7 @@ const Footer = () => {
                         </ul>
 
                     </div>
-                    <div className="col-2">
+                    <div className="col-md-2  mt-2">
                         <ul>
                             <label> Legal</label>
                             <li><a href="#">Term & Conditions</a></li>
@@ -95,10 +87,10 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <hr />
+                <hr  className="about-hr"/>
                 <div className="row">
-                    <div className="col-2 ">
-                        <p className="footer-data">©2025 REGISTERED BIZLANTIC TECH</p>
+                    <div className="col-2 offset-1 ">
+                        <p className="footer-data ">©2025 REGISTERED BIZLANTIC TECH</p>
                     </div>
                     <div className="col-2">
                         <p className="footer-data">ALL RIGHTS RESERVED </p>
@@ -106,10 +98,10 @@ const Footer = () => {
                     </div>
                     <div className="col-2">
                         <p className="footer-data"> COMPANY NO: 1146883</p>
-                    </div>
-                    <div className="col-3"></div>
-                    <div className="col-3 d-flex justify-content-end">
-                        <p className="footer-data">REVOLUTIONIZED BY NEXUP DIGITAL LLC</p>
+                    </div>    
+
+                    <div className="col-2 offset-md-3">
+                        <p className="footer-data">REVOLUTIONIZED BY <a href="https://nexupdigital.com/digital-marketing/">NEXUP DIGITAL</a></p>
                     </div>
                 </div>
             </div>

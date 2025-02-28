@@ -12,8 +12,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>  
     <BrowserRouter basename="/bizlantic/">
     <App /> 
-    </BrowserRouter>  
-       
-
-  </StrictMode>,
+    </BrowserRouter>      
+ </StrictMode>,
 )

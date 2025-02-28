@@ -86,7 +86,7 @@ css of AboutKnow component start here */
 }
 .about-team{
     font-family: 'Popins-medium';
-    font-size: 1vw; 
+    font-size: calc(0.9vw + 1px); 
     color: #555756;
     
 }
@@ -97,9 +97,33 @@ css of AboutKnow component start here */
 }
 .about-vision{
     font-family: 'Popins-bold';
-    font-size: 1vw;
-    margin-bottom: 0%;
+    font-size: calc(1vw + 1px);
+    margin-bottom: 1%;
 }
+
+
+@media (max-width:748px) {
+    .about-team , .about-want-to-know{
+        
+        font-size: .5rem; 
+       text-align: center;
+        
+    }
+    .about-heading,.about-vision{
+        
+        font-size: 0.5rem;
+       text-align: center;
+    }
+    .frezone-first-button{
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+
+
+
+
 .about-calc{
     font-family: 'Popins-medium';
     font-size: 1vw;

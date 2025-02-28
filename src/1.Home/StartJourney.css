@@ -34,25 +34,25 @@
 .LookDubai {
     font-family: 'Popins-light';
     color: #006CFF;
-    font-size: 0.9vw;
+    font-size: calc(0.9vw + 5px);
 }
 
 .StartYour {
     font-family: 'Popins-light';
-    font-size: 3.6vw;
+    font-size: calc(3.6vw + 5px);
     margin: 0%;
 }
 
 .BusJo {
     font-family: 'Popins-bold';
-    font-size: 3.6vw;
-    line-height: 48px;
+    font-size: calc(3.6vw + 5px);
+    /* line-height: 48px; */
     margin-bottom: 7%;
 }
 
 .Help {
     font-family: 'Popins-medium';
-    font-size: 1.1vw;
+    font-size: calc(0.7vw + 5px);
 
 }
 
@@ -60,53 +60,22 @@
     padding-top: 8%;
 }
 
-.for-position-img-burj-img {
-    width: 100%;
-    height: 100%;
+@media (max-width:600px) {
 
-    border-radius: 10px;
-
+    .LookDubai,
+    .StartYour,
+    .BusJo,
+    .Help {
+        text-align: center;
+    }
 }
 
-.for-position-img {
-   
-    width: 400px;
-    height: 450px;
-    border-radius: 10px
-}
 
-.for-position-main {
-    position: relative;
-}
 
-.main-burj-img {
-    width: 400px;
-    height: 450px;
-    position: absolute;
-    top: 8%;
-    right: 27%;
 
-}
 
-.for-position-img {
-    width: 355px;
-    height: 450px;
-    border-radius: 12px;
-    position: relative;
-    background: linear-gradient(to left, #006CFF, #FFFF00);
-    
-    /* Adjust this value for the border thickness */
-}
 
-.for-position-img::before {
-    content: "";
-    position: absolute;
-    inset: 5px;
-    /* Creates an inner cutout effect */
-    background-color: white;
-    /* Adjust this to match the background */
-    border-radius: 12px;
-}
+
 
 /* css of StartJourney component starts here
 css of StartJourney component starts here
@@ -118,8 +87,8 @@ css of StartJourney component starts here */
 
 .register-para {
     font-family: 'Popins-medium';
-    font-size: 1vw;
-    
+    font-size: calc(0.7vw + 4px);
+
 
 }
 
@@ -129,9 +98,9 @@ css of StartJourney component starts here */
 
 .register-now {
     font-family: 'Popins-medium';
-    font-size: 1vw;
-    color: white;
-  
+    font-size: calc(0.7vw + 5px);
+
+
 }
 
 .register-now a {
@@ -151,31 +120,31 @@ CSS of WhyUs omponent starts here */
 
 .who-are-we {
     font-family: 'Popins-medium';
-    font-size: 1vw;
+    font-size: calc(0.8vw + 3px);
     color: #006CFF;
-    ;
+
 
 }
 
 .we-r-biz {
     font-family: 'Popins-light';
-    font-size: 3vw;
+    font-size: calc(3vw + 3px);
 }
 
 .we-r-biz span {
     font-family: 'Popins-bold';
-    font-size: 3vw;
+    font-size: calc(3vw + 3px);
 }
 
 .who-dec {
     font-family: 'Popins-medium';
-    font-size: 1vw;
+    font-size: calc(0.8vw + 3px);
     color: #555756;
 }
 
 .who-di {
     font-family: 'Popins-medium';
-    font-size: 1vw;
+    font-size: calc(0.8vw + 3px);
     color: #555756;
     word-spacing: -3px;
     text-align: justify;
@@ -184,13 +153,13 @@ CSS of WhyUs omponent starts here */
 
 .who-la {
     font-family: 'Popins-medium';
-    font-size: 1vw;
+    font-size: calc(0.8vw + 3px);
     color: #555756;
 }
 
 .who-off {
     font-family: 'Popins-medium';
-    font-size: 1vw;
+    font-size: calc(0.8vw + 3px);
     color: #555756;
 
 }
@@ -202,22 +171,41 @@ CSS of WhyUs omponent starts here */
 
 .why-btn-span {
     font-family: 'Popins-medium';
-    font-size: 1vw;
+    font-size: calc(0.8vw + 3px);
 
 }
 
 .why-btn {
     margin-left: 30px;
     font-family: Popins-medium;
-    font-size: 0.9vw;
+    font-size: calc(0.8vw + 3px);
 }
 
 .why-btn-1 {
 
     font-family: Popins-medium;
-    font-size: 0.9vw;
+    font-size: calc(0.8vw + 3px);
 }
 
+@media (max-width:700px) {
+    .Posi {
+        display: none;
+    }
+
+    .who-are-we,
+    .we-r-biz,
+    .we-r-biz span,
+    .who-dec,
+    .who-di,
+    .who-la,
+    .who-off {
+        text-align: center;
+    }
+
+    .who-btn-div {
+        text-align: center;
+    }
+}
 
 
 /* css of UAecost component starts here
@@ -231,33 +219,33 @@ CSS of WhyUs omponent starts here */
 .Uae-calc {
     color: #006CFF;
     font-family: 'Popins-medium';
-    font-size: 1vw;
+    font-size: calc(1vw + 5px);
 
 }
 
 .Uae-how {
     font-family: 'Popins-medium';
-    font-size: 2.3vw;
+    font-size: calc(2vw + 5px);
     margin: 0%;
 
 }
 
 .Uae-setup {
     font-family: 'Popins-bold';
-    font-size: 2.3vw;
+    font-size: calc(2vw + 5px);
 
 
 }
 
 .Uae-help {
     font-family: 'Popins-medium';
-    font-size: 1vw;
+    font-size: calc(1vw + 3px);
     color: #555756;
 }
 
 .Uae-cost-calc-label {
     font-family: 'Popins-medium';
-    font-size: 1.5vw;
+    font-size: calc(2vw + 5px);
     color: #2b2c2c;
 }
 
@@ -291,6 +279,15 @@ CSS of WhyUs omponent starts here */
     display: block;
 }
 
+@media (max-width:700px) {
+
+    .Uae-calc,
+    .Uae-help,
+    .Uae-how,
+    .Uae-setup {
+        text-align: center;
+    }
+}
 
 
 /* css of OurServices component starts here
@@ -298,18 +295,26 @@ CSS of WhyUs omponent starts here */
   css of OurServices component starts here */
 .OurServices-heading {
     font-family: Popins-medium;
-    font-size: 2.5vw;
+    font-size: calc(2.5vw + 5px);
 }
 
 .OurServices-heading span {
     font-family: Popins-bold;
-    font-size: 2.5vw;
+    font-size: calc(2.5vw + 5px);
 }
 
 .OurServices-para {
-    font-family: Popins-medium;
-    font-size: 1vw;
+    font-family: Popins-semibold;
+    font-size: calc(1vw + 2px);
     color: #555756;
+}
+
+@media (max-width: 600px) {
+
+    .OurServices-heading,
+    .OurServices-para {
+        text-align: center;
+    }
 }
 
 

@@ -1,14 +1,15 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import './StartJourney.css';
-import Burjimg from '../assets/Burjimg.jpg';
+// import Burjimg from '../assets/Burjimg.jpg';
+import Posi from '../assets/posi.jpg';
 const StartJourney = () => {
     return (
         <div>
             <div className="container">
                 <div className="row">
-                    <div className="col-1"></div>
-                    <div className="col-5 StartJourney-for-grid">
+                   
+                    <div className="col-md-5 offset-md-1 StartJourney-for-grid ">
                         <p className='LookDubai'>Planning to start a business in Dubai?</p>
                         <p className='StartYour'>Start Your </p>
                         <p className='BusJo'>Business Journey!</p>
@@ -30,12 +31,9 @@ const StartJourney = () => {
 
 
                     </div>
-                    <div className="col-md-6   d-flex align-items-end justify-content-center for-position-main">
-                        <div className='for-position-img'></div>
-                        <div className='main-burj-img'>
-                            <img src={Burjimg} alt=""  className='for-position-img-burj-img '/>
-                        </div>
-                    </div>
+                    <div className="col-md-5 d-flex  aligin-items-end pt-5">
+                    <img src={Posi} alt=""  className='w-100 ' />
+                    </div>              
                   
                 </div>
             </div>

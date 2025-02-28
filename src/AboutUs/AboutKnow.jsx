@@ -1,19 +1,24 @@
 import React from 'react';
 import './AboutTopHeader.css';
+import { Link } from 'react-router-dom';
 
 const AboutKnow = () => {
     return (
         <div className='about-main'>
             <div className="container">
-                <p className='about-want-to-know'>Want to know more</p>
-                <p className='about-heading'>ABOUT BIZLANTIC</p>
-                <p className='about-team'>Our team is a group of experienced professionals with in-depth knowledge of setting up and running businesses in the UAE. From
-                    selecting the right business license to advising on mainland, free zone, or offshore companies, we offer complete support.
-                </p>
-                <p className='about-team'>We're dedicated to making your business a reality quickly, saving you valuable time and money</p>
+                <div className="row">
+                    <div className="col-md-10 offset-md-1">
+                        <p className='about-want-to-know'>Want to know more</p>
+                        <p className='about-heading'>ABOUT BIZLANTIC</p>
+                        <p className='about-team'>Our team is a group of experienced professionals with in-depth knowledge of setting up and running businesses in the UAE. From
+                            selecting the right business license to advising on mainland, free zone, or offshore companies, we offer complete support.
+                        </p>
+                        <p className='about-team'>We're dedicated to making your business a reality quickly, saving you valuable time and money</p>
+                    </div>
+                </div>
                 <hr className='about-hr' />
                 <div className="row">
-                    <div className="col-6 py-4">
+                    <div className="col-md-5 offset-md-1 py-4">
                         <p className='about-vision'>Our Vision:</p>
                         <p className='about-team'>Based in Dubai, we strive to be a trusted and respected
                             management consultancy, supporting global entrepreneurs
@@ -30,7 +35,7 @@ const AboutKnow = () => {
                         <p className='about-team'>We ensure end-to-end support, covering business initiation,
                             registration, licensing, and compliance.</p>
                     </div>
-                    <div className="col-sm-6 py-4">
+                    <div className="col-md-5 py-4">
                         <p className='about-vision'>Why Choose Us?</p>
                         <p className='about-team'>Bizlantic is your trusted partner for customized business setup
                             solutions in the UAE. Our multilingual team combines industry
@@ -50,18 +55,22 @@ const AboutKnow = () => {
                 </div>
                 <hr className='about-hr' />
             </div>
-            <div className="container mt-5">
-                <div className="row">
-                    <div className="col-6"></div>
-                    <div className="col-3  d-flex justify-content-end">
-                        <button className="button btn btn-primary about-calc px-3">Cost Calculator {'>'}</button>
-                    </div>
-                    <div className="col-3 d-flex justify-content-end">
-                    <button className="button btn btn-dark about-calc px-5">Contact Us {'>'}</button>
-                    </div>
+            <div className="row ">
+                <div className="col-md-8 d-flex justify-content-end frezone-first-button">
+
+                    <Link to="/costcalc" className='freezone-cost btn btn-primary'>Cost Calculator {">"}</Link>
+                    {/* <Link  to="/contact"  className='freezone-cost btn btn-dark'>Contact Us {">"}</Link> */}
+
+                </div>
+                <div className="col-md-2 d-flex justify-content-end frezone-first-button">
+
+                    {/* <Link to="/costcalc" className='freezone-cost btn btn-primary'>Cost Calculator {">"}</Link> */}
+                    <Link to="/contact" className='freezone-cost btn btn-dark'>Contact Us {">"}</Link>
+
                 </div>
             </div>
         </div>
+
     );
 };
 

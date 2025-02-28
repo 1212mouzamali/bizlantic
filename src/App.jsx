@@ -13,7 +13,7 @@ import TurnBar from './1.Home/TurnBar';
 import UaeCost from './1.Home/UaeCost';
 import OurServices from './1.Home/OurServices';
 import FreeConsultation from './1.Home/FreeConsultation';
-import Partners from './1.Home/Partners';
+// import Partners from './1.Home/Partners';
 import ClientSay from './1.Home/ClientSay';
 import AskQuestion from './1.Home/AskQuestion';
 import WeAreBiz from './AboutUs/WeAreBiz';
@@ -25,6 +25,8 @@ import LoginMain from './Login/LoginMain';
 import RegisterMain from './RegisterPage/RegisterMain';
 
 import './App.css';
+import CostCalc from './CostCalculator/CostCalc';
+import FreezoneMain from './Freezone/FreezoneMain';
 
 const Home = () => {
   return (
@@ -51,8 +53,8 @@ const Home = () => {
 };
 
 function App() {
-  return (
-   
+ 
+  return (   
     
       <Routes>
         <Route path="/" element={<Home/>} />
@@ -63,6 +65,8 @@ function App() {
         <Route path="/faq" element={<FAQTopHeader />} />
         <Route path="/login" element={<LoginMain />} />
         <Route path="/register" element={<RegisterMain />} />
+        <Route path="/costcalc" element={<CostCalc />} />
+        <Route path="/freezone" element={<FreezoneMain />} />
       </Routes>
    
     
