@@ -1,0 +1,79 @@
+
+.opacity-linear-bg{
+    background: linear-gradient(to left, #E2F3FF, #fffede);
+}
+
+
+
+
+.register-form-input-labels {
+    font-size: 1rem;
+    font-family: Popins-regular;
+}
+
+.register-form-input::placeholder {
+    font-size: 1.1rem;
+    font-family: Popins-regular;
+
+}
+
+.register-form-input {
+    border: none;
+    background-color: #EEEEEE;
+}
+
+.register-form-option {
+    font-size: 1rem;
+    border: none;
+    background-color: #f5f5f5;
+    font-family: Popins-regular;
+}
+
+/* Remove default border and increase tab width */
+.register-tab .nav-item .nav-link {
+    border: none !important;
+    /* Remove default Bootstrap border */
+    width: 20vw;
+    /* Increase width */
+    font-family: Popins-medium;
+    /* Change font family */
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+@media  (max-width: 768px) {
+    .register-tab .nav-item .nav-link {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    
+}
+
+/* Apply linear gradient border when focused (active) */
+.register-tab .nav-item .nav-link.active {
+    position: relative;
+    background-color: transparent !important;
+    color: #006CFF !important;
+    /* Change text color */
+}
+
+.register-tab .nav-item .nav-link.active::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    /* Border thickness */
+    border-radius: 5px;
+    /* Rounded corners */
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+    /* Gradient border */
+
+    /* Mask to only show border */
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+
+}

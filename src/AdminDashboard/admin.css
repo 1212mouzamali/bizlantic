@@ -1,0 +1,67 @@
+
+.gray{
+    color: #B5B7C0;
+  
+}
+.font-gray{
+    background-color: #f5f5f5;
+}
+.yellow-color{
+    color: #DF8404;
+}
+.bg-yellow-color{
+    background-color: #FFF1C5;
+}
+.for-admin-application-row-font{
+    font-family:"Popins-medium";   
+    font-size: 14px;
+}
+.admin-app-agency{
+    padding-right: 20px;   
+    padding-left:11px; 
+}
+.admin-app-name{
+    padding-right: 20px;
+    padding-left:102px;
+}
+.admin-app-ph{
+    padding-right: 10px;
+    padding-left:96px;
+}
+.admin-app-email{
+    padding-right: 20px;
+    padding-left:32px;
+}
+.admin-app-nationality{
+    padding-right: 20px;
+    padding-left:157px;
+}
+.admin-app-status{
+    padding-right: 20px;
+    padding-left:100px;
+}
+.for-word-break{
+    word-wrap: break-word ;
+   
+}
+
+
+
+.admin-app-agency-content{
+    width: 125px;    
+}
+.admin-app-name-content{
+    width: 100px;
+}
+.admin-app-ph-content{
+    width: 110px;
+}
+.admin-app-email-content{
+    width: 170px;
+}
+.admin-app-nationality-content{
+    width: 80px;
+}
+.admin-app-status-content{
+    width: 160px;
+}

@@ -1,0 +1,13 @@
+
+
+.terms-heading{
+    font-family: Popins-semibold;
+    color: #000000;
+    font-size: clamp(16px, 4vw, 18px);
+}
+.terms-para{
+    font-family: Popins-regular;
+    color: #000000;
+    font-size: clamp(16px, 4vw, 18px);
+}
+

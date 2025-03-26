@@ -1,8 +1,9 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: 'Popins-bold';
     src: url('../assets/Poppins-Bold.ttf'),
@@ -23,12 +24,14 @@
 
 
 }
+
 @font-face {
     font-family: 'Popins-regular';
     src: url('../assets/Poppins-Regular.ttf'),
 
 
 }
+
 @font-face {
     font-family: 'Popins-semibold';
     src: url('../assets/Poppins-SemiBold.ttf'),
@@ -37,38 +40,35 @@
 }
 
 
-.top-header-list li a{
-   text-decoration: none;
-   color: white;
+.top-header-list li a {
+    text-decoration: none;
+    color: white;
 }
-.top-header-list{
-    list-style: none;   
+
+.top-header-list {
+    list-style: none;
     margin-bottom: 0px;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
     padding-right: 1vw;
 
 }
-.top-header-list li{
+
+.top-header-list li {
     color: white;
     margin-left: 1%;
-     font-size: calc(0.8vw + 5px);
+    font-size: clamp(16px, 4vw, 16px);
     font-family: Popins-regular;
 }
-.main-top-header{   
+
+.main-top-header {
     background: linear-gradient(to left, #006CFF, #FFFF00);
 }
 
 
-@media (max-width: 600px) {  
-    .top-header-list {
-               font-size: 9px ;               
-               justify-content: center !important;
-    }
-   .top-header-list li{
-    margin-left: 8px;
-   }
-}
+
+
+
 
 
 
@@ -79,18 +79,29 @@
 css HeaderNav component starts here
 css HeaderNav component starts here
 css HeaderNav component starts here */
-.blacklogo{
-    width: 90%;
+.blacklogo {
+    /* Adjust based on your logo size */
+    width: 14rem;
 }
 
+.blacklogo-link {
+    display: flex;
+    align-items: center;
 
-.nav-main a{
-     font-family: Popins-semibold;  
-    width: 180px;
-     
 }
 
-.cost-calc-btn{
+.nav-main a {
+    font-family: Popins-regular;
+    width: 10rem;
+
+}
+
+.cost-calc-btn {
     background-color: #006CFF;
-    color: white !important;
+    font-size: clamp(18px, 4vw, 18px);
+}
+
+.business-setup .dropdown-item {
+    font-size: clamp(18px, 4vw, 18px) !important;
+    font-family: Popins-regular;
 }

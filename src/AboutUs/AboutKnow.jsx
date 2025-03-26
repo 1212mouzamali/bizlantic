@@ -16,7 +16,10 @@ const AboutKnow = () => {
                         <p className='about-team'>We're dedicated to making your business a reality quickly, saving you valuable time and money</p>
                     </div>
                 </div>
-                <hr className='about-hr' />
+                <div className="row">
+                    <div className="col-lg-10 about-hr offset-lg-1 ">
+                    </div>
+                </div>
                 <div className="row">
                     <div className="col-md-5 offset-md-1 py-4">
                         <p className='about-vision'>Our Vision:</p>
@@ -53,9 +56,12 @@ const AboutKnow = () => {
                             success in Dubai’s dynamic market.</p>
                     </div>
                 </div>
-                <hr className='about-hr' />
+                <div className="row">
+                    <div className="col-lg-10 about-hr offset-lg-1 ">
+                    </div>
+                </div>
             </div>
-            <div className="row ">
+            <div className="row mt-4">
                 <div className="col-md-8 d-flex justify-content-end frezone-first-button">
 
                     <Link to="/costcalc" className='freezone-cost btn btn-primary'>Cost Calculator {">"}</Link>

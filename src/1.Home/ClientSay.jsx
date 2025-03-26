@@ -1,6 +1,5 @@
 import React from "react";
 import './Footer.css';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -29,51 +28,44 @@ const ClientSay = () => {
         <div className='learn-main'>
             <div className="container">
                 <div className="row">
-                    <div className="col-1"></div>
-                    <div className="col-10 learn-slick">
+                    <div className="col-lg-10 offset-lg-1">
+                        <p className="learn-blue">It’s only the best</p>
                         <p className='learn-more'> WHAT OUR <span > CLIENTS SAY  </span> </p>
                         <Slider {...settings}>
-                            <div >
-                                <Card style={{ width: '20rem' }}>
+                            <div>
+                                <Card className="client-say-card-border " style={{ width: '21rem' }}>
                                     <Card.Body>
                                         <Card.Text className="client-say-first-card">
-                                            Bizlantic helped me set up my
-                                            business in the UAE with ease. Their
-                                            expert consultants guide through
-                                            every step, ensuring a smooth
-                                            process. Highly recommended!
-                                            <p className="text-end">Fatima M.</p>
+                                            <p className="Popins-bold mb-1">Amina AlFarsi - <span className="Popins-medium">Dubai Islamic Bank</span> </p>
+                                            <p className="Popins-regular mb-0">Bizlantic helped me set up my business in the UAE with ease.
+                                                Their expert consultants guided me through every step, ensuring a smooth process.
+                                                Highly recommended!</p>
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+
+                            <div>
+                                <Card className="client-say-card-border" style={{ width: '21rem' }}>
+                                    <Card.Body>
+                                        <Card.Text className="client-say-first-card">
+                                            <p className="Popins-bold mb-1">Amina AlFarsi - <span className="Popins-medium">Dubai Islamic Bank</span> </p>
+                                            <p className="Popins-regular mb-0">Bizlantic helped me set up my business in the UAE with ease.
+                                                Their expert consultants guided me through every step, ensuring a smooth process.
+                                                Highly recommended!</p>
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
                             </div>
                             <div>
-                                <Card style={{ width: '20rem' }}>
+                                <Card className="client-say-card-border" style={{ width: '21rem' }}>
                                     <Card.Body>
                                         <Card.Text className="client-say-first-card">
-                                            The team at Bizlantic provided
-                                            excellent guidance and support in
-                                            establishing my company. Their
-                                            expertise in UAE business setup is
-                                            unmatched. Truly grateful!
-                                            <p className="text-end">Fatima M.</p>
+                                            <p className="Popins-bold mb-1">Amina AlFarsi - <span className="Popins-medium">Dubai Islamic Bank</span> </p>
+                                            <p className="Popins-regular mb-0">Bizlantic helped me set up my business in the UAE with ease.
+                                                Their expert consultants guided me through every step, ensuring a smooth process.
+                                                Highly recommended!</p>
                                         </Card.Text>
-
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                            <div>
-                                <Card style={{ width: '20rem' }} className='shadow'>
-                                    <Card.Body>
-                                        <Card.Text className="client-say-first-card">
-                                            I had a fantastic experience working
-                                            with Bizlantic. Their professionals
-                                            made the business setup process
-                                            simple and straightforward. I highly
-                                            recommend their services.
-                                            <p className="text-end">Fatima M.</p>
-                                        </Card.Text>
-
                                     </Card.Body>
                                 </Card>
                             </div>

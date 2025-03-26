@@ -5,6 +5,7 @@ import AskQuestion from '../1.Home/AskQuestion';
 import Newsletter from '../1.Home/Newsletter';
 import WithBiz from '../AboutUs/WithBiz';
 import OurServices from '../1.Home/OurServices';
+import BlogIdeas from './BlogIdeas';
 import Footer from '../1.Home/Footer';
 
 const BlogTopHeader = () => {
@@ -12,8 +13,8 @@ const BlogTopHeader = () => {
         <header>
              <TopHeader />
              <HeaderNav /> 
-             <OurServices/>
-             <WithBiz/>
+             <BlogIdeas/>
+             <WithBiz />
              <AskQuestion/>
              <Newsletter/>
              <Footer/>

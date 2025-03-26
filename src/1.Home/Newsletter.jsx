@@ -24,28 +24,35 @@ const Newsletter = () => {
         <div className="news-background">
             <div className="container">
                 <div className="row">
-                    <div className="col-1"></div>
-                    <div className="col-10">
+                    <div className="col-lg-10 offset-lg-1 ">
+                        <p className="AqFirst">Want to get latest update?</p>
                         <p className="newsletter-subscribe-heading">SUBSCRIBE TO <span >OUR NEWSLETTER</span></p>
-                        <p className="newsletter-subscribe-para">Subscribe to our newsletter for the latest updates on UAE laws, government regulations, and industry insights. Receive expert tips
+                        <p className="Help">Subscribe to our newsletter for the latest updates on UAE laws, government regulations, and industry insights. Receive expert tips
                             and essential information directly to your inbox to stay informed and compliant. </p>
 
-                        <div className=" newsletter-form-bg">
-                            <Form className="subscribe-btn" onSubmit={handleSubscribe}>
-                                <Form.Group className=" d-flex" controlId="exampleForm.ControlInput1 " >
-                                    <Form.Control 
-                                    type="email" 
-                                    placeholder="Enter your email address..."                                  
-                                    value={email} 
-                                    onChange={(e) => setEmail(e.target.value)} 
-                                    required
-                                    />
-                                    <button className="btn btn-dark  newsletter-subscribe-button" type="submit">SUBSCRIBE{'>'}</button>
-                                </Form.Group>
-                            </Form> 
-                            {message && <p className="text-info">{message}</p>}                           
+                        <div className="row newsletter-form-bg">
+                            <div className="col-lg-9">
+                                <Form className="subscribe-btn" onSubmit={handleSubscribe}>
+                                    <Form.Group controlId="exampleForm.ControlInput1 " >
+                                        <Form.Control className="newsletter-input"
+                                            type="email"
+                                            placeholder="Enter your email address..."
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                            required
+                                        />
+
+                                    </Form.Group>
+                                </Form>
+                            </div>
+
+                            <div className="col-lg-3 mt-3 mt-lg-0">
+                                <button className="rounded py-1 newsletter-subscribe-button w-100" type="submit">SUBSCRIBE{'>'}</button>
+                            </div>
+                            {message && <p className="text-dark mb-0">{message}</p>}
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

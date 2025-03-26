@@ -19,48 +19,53 @@
 
 }
 
+.Popins-medium {
+    font-family: Popins-medium;
+}
+
+.Popins-bold {
+    font-family: Popins-bold;
+}
+
+.Popins-light {
+    font-family: Popins-light;
+}
+
 
 
 .footer-data {
-    font-size: calc(0.7vw + 1px);
-    font-family: Popins-light;
-
-}
-@media (max-width : 600px) {
-    .footer-data{
-       
-       text-align: center;
-    }
-}
-
-.footer-links .col-md-2 ul li a {
-    font-family: Popins-light;
-    text-decoration: none;
-    color: white;
     font-size: 14px;
+    font-family: Popins-regular;
+
 }
 
-.footer-links .col-md-2 ul li {
+
+
+.footer-links .col-lg-2 ul li a {
+    font-family: Popins-regular;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: clamp(16px, 4vw, 16px);
+}
+
+.footer-links .col-lg-2 ul li {
     list-style: none;
 }
 
-.footer-links .col-md-2 label {
-    padding-bottom: 3%;
+
+
+
+
+.footer-links-labels {
     font-family: Popins-semibold;
+    font-size: clamp(18px, 4vw, 18px);
 }
 
-
-@media (max-width:600px) {
-    .footer-links .col-md-2{
-        text-align: center;
-    }
-}
 /* css of newletter component starts here
 css of newletter component starts here
 css of newletter component starts here */
 
 .news-background {
-    background: linear-gradient(to left, #E2F3FF, #fffede);
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -74,68 +79,54 @@ css of newletter component starts here */
 .newsletter-form-bg .form-control {
     background-color: black;
     border: none;
-    padding: 0 0 0 1%;
+
 }
 
 .newsletter-form-bg .form-control::placeholder {
     color: gray;
     font-family: Popins-medium;
     font-style: italic;
-    font-size: 1vw;
+    font-size: clamp(16px, 4vw, 20px)
 }
 
 .newsletter-subscribe-heading {
-    font-family: Popins-medium;
-    font-size: 2vw;
+    font-family: Popins-regular;
+    font-size: clamp(24px, 4vw, 40px);
 }
 
 .newsletter-subscribe-heading span {
-    font-family: Popins-bold;
+    font-family: Popins-semibold;
 }
 
 .newsletter-subscribe-para {
     font-family: Popins-medium;
-    font-size: 1.1vw;
-    color: #555756;
+    font-size: clamp(16px, 4vw, 20px);
+    color: #000000;
 }
 
 .newsletter-subscribe-button {
-    font-family: Popins-medium;
-    font-size: 1vw;
-    margin-left: 1%;
+    font-family: Popins-semibold;
+    font-size: clamp(16px, 4vw, 18px);
+    background-color: #000000;
+
+    color: white;
+
 }
 
-@media (max-width: 768px) {
-    .newsletter-form-bg .form-control::placeholder {
 
-        font-size: 8px;
-    }
-
-    .newsletter-subscribe-button {
-        font-size: 8px;
-
-    }
-    .newsletter-subscribe-para {
-       text-align: center;
-       font-size: 6px;
-    }
-    .newsletter-subscribe-heading {
-        text-align: center;
-       font-size: 10px;
-       margin-bottom: 0;
-    }
-}
 
 /* css of Faq component starts here */
 /* css of Faq component starts here */
 /* css of Faq component starts here */
-.faq-frequently{
-    font-family: Popins-medium;
-    font-size: 2vw;
+.faq-frequently {
+    font-family: Popins-regular;
+    font-size: clamp(24px, 4vw, 40px);
 }
-.faq-frequently span{
-    font-family: Popins-bold;
+
+.faq-frequently span {
+    font-family: Popins-semibold;
 }
+
 .faq-background {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -143,7 +134,7 @@ css of newletter component starts here */
 
 .faq-background .faq-main-accordion {
     margin-top: 5%;
-    font-family: Popins-medium ;
+    font-family: Popins-medium;
     font-size: 1vw;
 }
 
@@ -151,14 +142,7 @@ css of newletter component starts here */
     background: linear-gradient(to left, #006CFF, #FFFF00);
 }
 
-@media  (max-width : 748px) {
-    .faq-frequently{
-        font-size: 16px;
-    }    
-    .faq-background .faq-main-accordion {       
-        font-size: 10px;
-    }
-}
+
 
 /* Center the accordion */
 /* Center the entire accordion */
@@ -167,13 +151,13 @@ css of newletter component starts here */
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+
 }
 
 /* Restrict the width of the accordion */
 .faq-background .accordion-container .accordion {
     width: 50%;
-  
+
     /* Adjust as needed */
     max-width: 600px;
     /* Prevents it from being too wide */
@@ -187,7 +171,7 @@ css of newletter component starts here */
     /* Ensures full width usage */
     text-align: left;
     /* Optional: Adjust text alignment */
-    
+
 }
 
 
@@ -198,8 +182,7 @@ css of newletter component starts here */
 
 /* css of LearnMore component starts here
 css of LearnMore component starts here */
-.learn-main {
-    background-color: #f5f5f5;
+.learn-main {    
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -207,23 +190,32 @@ css of LearnMore component starts here */
 .slick-prev:before,
 .slick-next:before {
     font-family: 'slick';
-    font-size: 30px !important;   
+    font-size: 30px !important;
     color: #006CFF !important;
 
 }
 
 .slick-prev:before {
-    margin-left: -92%;
+    margin-left: -139%;
 }
-.learn-more{
-    font-family: Popins-medium;
-    font-size: 2vw;
+
+.learn-more {
+    font-family: Popins-regular;
+    font-size: clamp(24px, 4vw, 40px);
     margin-top: 2%;
-    margin-bottom:4%;
+    margin-bottom: 4%;
 }
-.learn-more span{
+
+.learn-more span {
     font-family: Popins-bold;
 }
+
+.learn-blue {
+    font-family: Popins-regular;
+    color: #006CFF;
+    font-size: clamp(16px, 4vw, 20px);
+}
+
 /* css of TurnBar component starts here
 css of TurnBar component starts here */
 .turn-bar-background {
@@ -252,76 +244,152 @@ css of TurnBar component starts here */
 
 /* Askquestion component css starts here
 Askquestion component css starts here */
-.ask-question-background {
-    background: linear-gradient(to left, #E2F3FF, #fffede);
-    padding: 5%;
 
+
+.ask-question-background{
+    background-image: url("../assets/map.png"),linear-gradient(to left, #E2F3FF, #fffede);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    padding: 5%; 
 }
+.ask-question-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to left,
+        rgba(226, 243, 255, 0.9),  
+        rgba(255, 254, 222, 0.9)   
+    );
+    z-index: 0;
+}
+.ask-question-background >* {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .ask-question-background {
+        background:none; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .AqFirst {
     color: #006CFF;
-    font-size: 1.2vw;
-    font-family: Popins-medium;
+    font-size: 20px;
+    font-family: Popins-regular;
 }
 
 .AqSecond {
-    font-size: 2vw;
+    font-size: calc(1.5vw + 5px);
     font-family: Popins-medium;
     margin: 0%;
 }
 
 .AqThird {
-    font-size: 2vw;
+    font-size: calc(1.5vw + 5px);
     font-family: Popins-bold;
 }
 
 .AqFourth {
-    font-size: 1vw;
+    font-size: calc(1.5vw + 3px);
     font-family: Popins-medium;
 }
 
 .AqFifth {
-    font-size: 1vw;
+    font-size: calc(1vw + 3px);
     font-family: Popins-medium;
     margin: 0%;
 }
 
 .AqSixth {
-    font-size: 1vw;
+    font-size: calc(1vw + 3px);
     font-family: Popins-light;
 }
 
 .AqSeventh {
-    font-size: 1vw;
+    font-size: calc(1vw + 3px);
     font-family: Popins-medium;
     margin: 0%;
 }
 
 .AqEight {
-    font-size: 1vw;
+    font-size: calc(1vw + 3px);
     font-family: Popins-light;
 }
 
 .AqNinth {
-    font-size: 1vw;
+    font-size: calc(1vw + 3px);
     font-family: Popins-medium;
     margin: 0%;
 }
 
 .AqTenth {
-    font-size: 1vw;
+    font-size: calc(1vw + 3px);
     font-family: Popins-light;
 }
 
-.Askquestion-form-label{
+.Askquestion-form-label {
     font-family: Popins-bold;
-    font-size: 1.2vw;
+    font-size: calc(1vw + 3px);
 }
-.Askquestion-form-main label{
+
+.Askquestion-form-main label {
     font-family: Popins-medium;
     font-size: 1vw;
 }
 
+@media (max-width:748px) {
+
+    .AqFourth,
+    .AqFifth,
+    .AqSixth,
+    .AqSeventh,
+    .AqEight,
+    .AqNinth,
+    .AqTenth {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .AqSecond,
+    .AqThird {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .Askquestion-form-main label,
+    .Askquestion-form-label {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
 
 /* Footer white logo part starts here
 Footer white logo part starts here
@@ -370,6 +438,7 @@ Footer white logo part starts here */
         display: flex;
         justify-content: center;
         font-size: 12px;
+        font-family: Popins-regular;
     }
 
     .footer-num-mail {
@@ -379,20 +448,72 @@ Footer white logo part starts here */
 }
 
 
+.footer-main {
+    background-image: url("../assets/map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+    position: relative;
+}
+
+.footer-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Dark overlay to make white map subtle */
+    z-index: 0;
+}
+
+.footer-main>* {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .footer-main {
+        background-size: contain;
+        background-position: top center;
+    }
+}
 
 
 /* css of client say component starts here
 css of client say component starts here
 css of client say component starts here */
-
-
-.client-say-first-card{
-    font-family: Popins-medium;
-    font-style:italic;
-    font-size: 14px;
-    padding: 19px 17px 11px 10px;
-    
+.client-say-first-card {
+    font-size: clamp(14px, 4vw, 16px);
+    color: #000000;
+    letter-spacing: -0.6px;
+    word-spacing: -1.9px;
 }
+
+.client-say-card-border {
+    position: relative;
+    border: none;
+}
+
+.client-say-card-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 1rem;
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
 
 
 
@@ -509,14 +630,21 @@ css of client say component starts here */
     font-weight: bold;
 }
 
-.aq-second, .aq-third {
+.aq-second,
+.aq-third {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
     color: #333;
 }
 
-.aq-fourth, .aq-fifth, .aq-sixth, .aq-seventh, .aq-eight, .aq-ninth, .aq-tenth {
+.aq-fourth,
+.aq-fifth,
+.aq-sixth,
+.aq-seventh,
+.aq-eight,
+.aq-ninth,
+.aq-tenth {
     font-size: 14px;
     font-weight: 500;
     color: #555;

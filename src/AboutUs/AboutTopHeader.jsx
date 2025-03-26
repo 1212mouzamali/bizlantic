@@ -10,6 +10,8 @@ import WeAreBiz from './WeAreBiz';
 import GlobeAbout from './GlobeAbout';
 import AboutKnow from './AboutKnow';
 import WithBiz from './WithBiz';
+import ClientSay from '../1.Home/ClientSay';
+import Partners from '../1.Home/Partners';
 
 const AboutTopHeader = () => {
     return (
@@ -20,6 +22,8 @@ const AboutTopHeader = () => {
             <AboutKnow/> 
             <WeAreBiz/> 
             <WhyUs/>
+            <ClientSay/>
+            <Partners/>
             <WithBiz/>
             <AskQuestion/>
             <Newsletter/>

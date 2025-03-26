@@ -1,8 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: 'Popins-bold';
     src: url('../assets/Poppins-Bold.ttf'),
@@ -23,43 +24,50 @@
 
 
 }
-.globe-about-main{
+
+.globe-about-main {
     padding-top: 4%;
 }
 
-.Gradientlogo{
+.Gradientlogo {
     width: 20%;
 }
-.about-global{
+
+.about-global {
     font-family: 'Popins-medium';
-    font-size: 2.5vw;
+    font-size: clamp(30px, 4vw, 50px);
     margin-top: 37px;
     margin-bottom: 0;
 }
-.about-dubai{
+
+.about-dubai {
     font-family: 'Popins-bold';
-    font-size: 2.5vw;
+    font-size: clamp(30px, 4vw, 50px);
 
 }
-.map-img{
+
+.map-img {
     width: 100%;
-   
+
 }
-.about-text-below-map{   
-     background: linear-gradient(to left, #006CFF, #FFFF00); 
-     
+
+.about-text-below-map {
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+
 }
-.about-text-below-m, .first-para{
-    font-family: 'Popins-medium';
-    font-size: 1.2vw;
+
+.about-text-below-map .first-para {
+    font-family: 'Popins-regular';
+    font-size: clamp(20px, 4vw, 25px);
     margin-bottom: 0;
-   
+
 }
-.about-text-below-m, .second-para{
-    font-family: 'Popins-bold';
-    font-size: 1.2vw;
+
+.about-text-below-map .second-para {
+    font-family: 'Popins-semibold';
+    font-size: clamp(20px, 4vw, 25px);
     margin-bottom: 0;
-    
+
 }
 
 
@@ -67,54 +75,51 @@
 /* css of AboutKnow component start here
 css of AboutKnow component start here
 css of AboutKnow component start here */
-.about-main{
+.about-main {
     background: linear-gradient(to left, #E2F3FF, #FFFFFF);
     padding-top: 5%;
     padding-bottom: 5%;
 
 }
 
-.about-want-to-know{
+.about-want-to-know {
     font-family: 'Popins-medium';
-    font-size: 1vw;
+    font-size: clamp(16px, 4vw, 18px);
     color: #006CFF;
 }
-.about-heading{
-    font-family: 'Popins-bold';
-    font-size: 2vw;
-    
+
+.about-heading {
+    font-family: Popins-semibold;
+    font-size: clamp(16px, 4vw, 18px);
+    color: #000000;
+
 }
-.about-team{
-    font-family: 'Popins-medium';
-    font-size: calc(0.9vw + 1px); 
-    color: #555756;
-    
+
+.about-team {
+
+    font-family: Popins-regular;
+    font-size: clamp(16px, 4vw, 18px);
+    color: #000000;
+
 }
+
 .about-hr {
-    height: 5px; 
-  border: none;
-  background: linear-gradient(to left, #006CFF, #FFFF00);
+    height: 2px;
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+
 }
-.about-vision{
-    font-family: 'Popins-bold';
-    font-size: calc(1vw + 1px);
-    margin-bottom: 1%;
+
+.about-vision {
+    font-family: Popins-semibold;
+    font-size: clamp(16px, 4vw, 18px);
+    color: #000000;
 }
 
 
-@media (max-width:748px) {
-    .about-team , .about-want-to-know{
-        
-        font-size: .5rem; 
-       text-align: center;
-        
-    }
-    .about-heading,.about-vision{
-        
-        font-size: 0.5rem;
-       text-align: center;
-    }
-    .frezone-first-button{
+@media (max-width:780px) {
+
+
+    .frezone-first-button {
         display: flex;
         justify-content: center !important;
     }
@@ -124,25 +129,33 @@ css of AboutKnow component start here */
 
 
 
-.about-calc{
+.about-calc {
     font-family: 'Popins-medium';
     font-size: 1vw;
-   
+
 }
 
 /* css of WeAreBiz component starts here
 css of WeAreBiz component starts here
 css of WeAreBiz component starts here */
 
-.wearebiz-para-div{
+.wearebiz-para-div {
     background: linear-gradient(to left, #006CFF, #FFFF00);
-    
+
 }
-.wearebiz-para{
-    font-family: Popins-medium;
-    font-size: 2vw;
+
+.wearebiz-para {
+    font-family: Popins-regular;
+    font-size: clamp(18px, 4vw, 28px);
     margin-bottom: 0%;
 }
-.wearebiz-span{
-    font-family: Popins-bold;
+
+.wearebiz-span {
+    font-family: Popins-semibold;
+}
+
+@media (max-width:748px) {
+    .wearebiz-para {
+        text-align: center;
+    }
 }

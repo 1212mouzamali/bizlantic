@@ -1,48 +1,102 @@
-
-.freezone-cost{
+.freezone-cost {
     font-family: Popins-medium;
     text-decoration: none;
-   width: 12rem;
+    width: 12rem;
     color: white;
-}
-.freezone-cost-main{
-    display: flex;
-     justify-content: space-evenly;
-    
- }
-.freezoneLooking{
-    font-family:Popins-medium ;
-    color: #006CFf;
-}
-.freezoneSetup{
-    font-family:Popins-bold ;
-    font-size: calc(3vw + 5px);
-}
-.freezoneStart{
-    font-family:Popins-medium ;
-}
-.freezoneImg{
-    width: 100%;
+    font-size: clamp(16px, 4vw, 18px);
 }
 
-@media (max-width:600px) {
-    .freezoneSetup{
-        font-size: calc(3vw + 5px);
+.freezone-cost-main {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.freezoneLooking {
+    font-family: Popins-regular;
+    font-size: clamp(16px, 4vw, 20px);
+    color: #006CFf;
+}
+
+.freezoneSetup {
+    font-family: Popins-regular;
+    font-size: clamp(24px, 4vw, 55px);
+
+}
+
+.freezoneSetup span {
+    font-family: Popins-bold;
+    font-size: clamp(24px, 4vw, 60px);
+
+}
+
+.freezoneStart {
+    font-family: Popins-regular;
+    font-size: clamp(16px, 4vw, 20px);
+}
+
+.freezoneImg {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:790px) {
+
+    .freezoneLooking {
         text-align: center;
     }
-    .freezoneLooking{
-        text-align: center;
-    }
-    .freezoneStart{
-        text-align: center;
-        font-size: 12px;
-    }
-    .freezoneImg{
-        margin-top: 8%;
-    }
-    .freezone-cost{
+
+    .freezone-cost {
         margin: 4px;
     }
-   
-    
+
+    .freezone-cost-main {
+        display: unset;
+        justify-content: unset;
+
+    }
+
+    .freezone-cost {
+        width: 100%;
+    }
+}
+
+/* The css of FreezoneAssist component has been started here
+The css of FreezoneAssist component has been started here
+The css of FreezoneAssist component has been started here */
+
+
+.assist-lines-size {
+    /* font-size: clamp(1rem, calc(1vw + 2px), 5rem); */
+    /* font-size: clamp(1.2rem, 2rem, 5rem); */
+    font-size: .9rem;
+
+
+}
+
+.freezone-offer-blue {
+    font-family: Popins-regular;
+    font-size: clamp(16px, 4vw, 20px);
+    color: #006CFf;
+}
+
+.freezone-offer-heading {
+    font-family: Popins-regular;
+    font-size: clamp(24px, 4vw, 36px);
+    color: #000000;
+}
+.freezone-offer-heading span{
+    font-family: Popins-bold;
+    font-size: clamp(24px, 4vw, 36px);
+    color: #000000;
+}
+.freezone-offer-label{
+    font-family: Popins-semibold;
+    font-size: clamp(16px, 4vw, 18px);
+    color: #000000;
+}
+.freezone-offer-icon{
+    font-family: Popins-regular;
+    font-size: clamp(16px, 4vw, 18px);
+    color: #000000;
 }

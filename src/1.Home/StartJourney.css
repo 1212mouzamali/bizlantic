@@ -1,24 +1,3 @@
-@font-face {
-    font-family: 'Popins-bold';
-    src: url('../assets/Poppins-Bold.ttf'),
-
-
-}
-
-@font-face {
-    font-family: 'Popins-light';
-    src: url('../assets/Poppins-Light.ttf'),
-
-
-}
-
-@font-face {
-    font-family: 'Popins-medium';
-    src: url('../assets/Poppins-Medium.ttf'),
-
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -32,27 +11,29 @@
 }
 
 .LookDubai {
-    font-family: 'Popins-light';
+
     color: #006CFF;
-    font-size: calc(0.9vw + 5px);
+    font-size:  20px;
+    font-family: "Popins-regular";
 }
 
 .StartYour {
-    font-family: 'Popins-light';
+
     font-size: calc(3.6vw + 5px);
     margin: 0%;
 }
 
 .BusJo {
     font-family: 'Popins-bold';
-    font-size: calc(3.6vw + 5px);
+    font-size: calc(3.3vw + 5px);
     /* line-height: 48px; */
     margin-bottom: 7%;
 }
 
 .Help {
-    font-family: 'Popins-medium';
-    font-size: calc(0.7vw + 5px);
+    font-family: 'Popins-regular';
+    font-size: clamp(16px, 4vw, 20px);
+    color: #000000;
 
 }
 
@@ -60,13 +41,15 @@
     padding-top: 8%;
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
 
-    .LookDubai,
-    .StartYour,
-    .BusJo,
-    .Help {
-        text-align: center;
+    .LookDubai {
+        font-size: 0.9rem !important;
+    }
+  
+
+    .BusJo {
+        font-size: 1.8rem;
     }
 }
 
@@ -80,14 +63,15 @@
 /* css of StartJourney component starts here
 css of StartJourney component starts here
 css of StartJourney component starts here */
+
 .reg-bar {
     background: linear-gradient(to left, #006CFF, #FFFF00);
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 .register-para {
     font-family: 'Popins-medium';
-    font-size: calc(0.7vw + 4px);
+    font-size: calc(0.9vw + 4px);
 
 
 }
@@ -99,12 +83,20 @@ css of StartJourney component starts here */
 .register-now {
     font-family: 'Popins-medium';
     font-size: calc(0.7vw + 5px);
-
-
 }
 
 .register-now a {
     color: white;
+
+}
+
+@media (max-width:700px) {
+
+    .register-para,
+    .register-now {
+        font-size: 0.9rem;
+        text-align: center;
+    }
 
 }
 
@@ -119,50 +111,32 @@ CSS of WhyUs omponent starts here */
 }
 
 .who-are-we {
-    font-family: 'Popins-medium';
-    font-size: calc(0.8vw + 3px);
+    font-family: 'Popins-regular';
+    font-size: clamp(16px, 4vw, 18px);
     color: #006CFF;
 
 
 }
 
 .we-r-biz {
-    font-family: 'Popins-light';
-    font-size: calc(3vw + 3px);
+    font-family: 'Popins-regular';
+    font-size: clamp(20px, 4vw, 38px);
 }
 
 .we-r-biz span {
-    font-family: 'Popins-bold';
-    font-size: calc(3vw + 3px);
+    font-family: 'Popins-semibold';
+    font-size: clamp(20px, 4vw, 40px);
 }
 
 .who-dec {
-    font-family: 'Popins-medium';
-    font-size: calc(0.8vw + 3px);
-    color: #555756;
+    font-family: 'Popins-regular';
+    font-size: clamp(16px, 4vw, 18px);
+    color: #000000;
+    letter-spacing: -0.6px;
 }
 
-.who-di {
-    font-family: 'Popins-medium';
-    font-size: calc(0.8vw + 3px);
-    color: #555756;
-    word-spacing: -3px;
-    text-align: justify;
 
-}
 
-.who-la {
-    font-family: 'Popins-medium';
-    font-size: calc(0.8vw + 3px);
-    color: #555756;
-}
-
-.who-off {
-    font-family: 'Popins-medium';
-    font-size: calc(0.8vw + 3px);
-    color: #555756;
-
-}
 
 .whyus-main {
     padding-top: 5%;
@@ -170,42 +144,20 @@ CSS of WhyUs omponent starts here */
 }
 
 .why-btn-span {
-    font-family: 'Popins-medium';
-    font-size: calc(0.8vw + 3px);
+    font-size: clamp(16px, 4vw, 18px);
 
 }
+
 
 .why-btn {
-    margin-left: 30px;
+    width: 100%;
     font-family: Popins-medium;
-    font-size: calc(0.8vw + 3px);
+    font-size: clamp(16px, 4vw, 18px);
+
 }
 
-.why-btn-1 {
 
-    font-family: Popins-medium;
-    font-size: calc(0.8vw + 3px);
-}
 
-@media (max-width:700px) {
-    .Posi {
-        display: none;
-    }
-
-    .who-are-we,
-    .we-r-biz,
-    .we-r-biz span,
-    .who-dec,
-    .who-di,
-    .who-la,
-    .who-off {
-        text-align: center;
-    }
-
-    .who-btn-div {
-        text-align: center;
-    }
-}
 
 
 /* css of UAecost component starts here
@@ -214,13 +166,6 @@ CSS of WhyUs omponent starts here */
 .Uae-main {
     padding-top: 6%;
     padding-bottom: 6%;
-}
-
-.Uae-calc {
-    color: #006CFF;
-    font-family: 'Popins-medium';
-    font-size: calc(1vw + 5px);
-
 }
 
 .Uae-how {
@@ -233,50 +178,6 @@ CSS of WhyUs omponent starts here */
 .Uae-setup {
     font-family: 'Popins-bold';
     font-size: calc(2vw + 5px);
-
-
-}
-
-.Uae-help {
-    font-family: 'Popins-medium';
-    font-size: calc(1vw + 3px);
-    color: #555756;
-}
-
-.Uae-cost-calc-label {
-    font-family: 'Popins-medium';
-    font-size: calc(2vw + 5px);
-    color: #2b2c2c;
-}
-
-
-
-
-
-.custom-select-wrapper {
-    display: inline-block;
-    position: relative;
-    padding: 2px;
-    /* Space for the border */
-    border-radius: 8px;
-    background: linear-gradient(to left, #006CFF, #FFFF00);
-    /* Gradient Border */
-    width: 100%;
-    /* Ensure wrapper takes full width */
-}
-
-.custom-select {
-    border: none;
-    outline: none;
-    width: 100%;
-    /* Make sure it fills the wrapper */
-    padding: 8px 12px;
-    border-radius: 6px;
-    background-color: white;
-    /* Keep background */
-    appearance: none;
-    /* Remove default styles */
-    display: block;
 }
 
 @media (max-width:700px) {
@@ -289,62 +190,55 @@ CSS of WhyUs omponent starts here */
     }
 }
 
+.bg-linear {
+    background: linear-gradient(to left, #006CFF, #FFFF00);
+}
+
 
 /* css of OurServices component starts here
   css of OurServices component starts here
   css of OurServices component starts here */
 .OurServices-heading {
-    font-family: Popins-medium;
-    font-size: calc(2.5vw + 5px);
+    font-family: Popins-regular;
+    font-size: clamp(24px, 4vw, 40px);
 }
 
 .OurServices-heading span {
-    font-family: Popins-bold;
-    font-size: calc(2.5vw + 5px);
-}
-
-.OurServices-para {
     font-family: Popins-semibold;
-    font-size: calc(1vw + 2px);
-    color: #555756;
+    font-size: clamp(24px, 4vw, 40px);
 }
 
-@media (max-width: 600px) {
-
-    .OurServices-heading,
-    .OurServices-para {
-        text-align: center;
-    }
+.services-card-title {
+    font-family: Popins-semibold;
+    font-size: clamp(20px, 4vw, 26px);
 }
+.services-card-text{
+    font-family: Popins-regular;
+    font-size: clamp(16px, 4vw, 18px);
+    color: #000000;
+}
+.services-card-detail{
+    font-family: Popins-regular;
+    font-size: clamp(16px, 4vw, 18px);   
+    background-color: #006CFF;
+    color: white;
+    text-decoration: none;
 
+}
 
 /* css of free consultation component starts here
     css of free consultation component starts here
     css of free consultation component starts here */
 
-.free-consultation-main {
-    background: linear-gradient(to left, #006CFF, #FFFF00);
-    margin-top: 2%;
-    border-radius: 10px;
-}
+    .freeconst-looking{
+        font-size: clamp(18px, 4vw, 22px);
+        font-family: Popins-regular;
+    }
+    .freeconst-get{
+        font-size:clamp(22px, 4vw, 38px);
+        font-family: Popins-semibold;
+    }
 
-.cons-top {
-    font-family: Popins-medium;
-    font-size: 1vw;
-    margin: 0%;
-
-}
-
-.cons-bottom {
-    font-family: Popins-bold;
-    font-size: 2vw;
-    margin: 0%;
-
-
-}
-
-.cons-contact {
-    font-family: Popins-medium;
-    font-size: 1vw;
+.newsletter-input:focus {
     color: white;
 }

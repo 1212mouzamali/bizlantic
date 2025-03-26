@@ -1,75 +1,88 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Whitelogo from '../assets/Whitelogo.png';
 import './Footer.css';
 const Footer = () => {
     return (
-        < div className="bg-dark text-white">
-            <div className="container pt-5">
+        < div className=" text-white footer-main">
+            <div className="container  pt-5">
                 <div className="row footer-links">
-                    <div className="col-md-2 mt-2">
-                        <ul>
-                            <label>Business Setup</label>
-                            <li><a href="#">Freezone License</a></li>
-                            <li><a href="#">Mainland License</a></li>
-                            <li><a href="#">Offshore License</a></li>
-                        </ul>
-                    </div>
-                    <div className="col-md-2  mt-2">
-                        <ul>
-                            <label>Finance Service</label>
-                            <li><a href="#">Corporate Tax</a></li>
-                            <li><a href="#">VAT Resgistration</a></li>
-                            <li><a href="#">Bank Account Assist</a></li>
-                        </ul>
-                    </div>
-                    <div className="col-md-2  mt-2">
-                        <ul>
-                            <label>Residence</label>
-                            <li><a href="#">Golden Visa</a></li>
-                            <li><a href="#">Citizenship</a></li>
-                        </ul>
-                    </div>
-                    <div className="col-md-2  mt-2">
-                        <ul >
-                            <label> Digital</label>
-                            <li><a href="#">Digital Marketing</a></li>
-                            <li><a href="#">Social Media Management</a></li>
-                            <li><a href="#">Website & App Development</a></li>
-                        </ul>
-                    </div>
-                    <div className="col-md-2  mt-2">
-                        <ul>
-                            <label> Info</label>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Our Blog</a></li>
-                        </ul>
+                    <div className="col-lg-10 offset-lg-1">
+                        <div className="row  ">
+                            <div className="col-lg-2 mt-2">
+                                <ul className="px-0 text-center text-lg-start">
+                                    <label className="footer-links-labels ">Business Setup</label>
+                                    <li className="mt-2"><Link to="/freezone" >Freezone License</Link></li>
+                                    <li><Link to="/mainmain">Mainland License</Link></li>
+                                    <li><Link to="/offshore">Offshore License</Link></li>
+                                </ul>
+                            </div>
+                            <div className="col-lg-2  mt-2 ">
+                                <ul className="px-1 text-center text-lg-start">
+                                    <label className="footer-links-labels">Finance Service</label>
+                                    <li className="mt-2"><Link to="/corporatemain">Corporate Tax</Link></li>
+                                    <li><Link to="/vatmain">VAT Registration</Link></li>
+                                    <li><Link to="/bankmain">Bank Assistance</Link></li>
+                                </ul>
+                            </div>
+                            <div className="col-lg-2  mt-2">
+                                <ul className="px-1 text-center text-lg-start">
+                                    <label className="footer-links-labels">Residence</label>
+                                    <li className="mt-2"><Link to="/goldmain">Golden Visa</Link></li>
+                                    <li><Link to="/citymain">Citizenship</Link></li>
+                                </ul>
+                            </div>
 
-                    </div>
-                    <div className="col-md-2  mt-2">
-                        <ul>
-                            <label> Legal</label>
-                            <li><a href="#">Term & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <div className="col-lg-2  mt-2 px-0">
+                                <ul className="px-1 text-center text-lg-start">
+                                    <label className="footer-links-labels"> Digital</label>
+                                    <li className="mt-2"><Link to="/digitalmain">Digital Marketing</Link></li>
+                                    <li><Link to="/socialmain">Social Management</Link></li>
+                                    <li><Link to="/webmain">Website & App Dev.</Link></li>
+                                </ul>
+                            </div>
 
-                        </ul>
+                            <div className="col-lg-2  mt-2 px-0">
+                                <ul className="px-1 text-center text-lg-start">
+                                    <label className="footer-links-labels"> Info</label>
+                                    <li className="mt-2"><Link to="/about">About Us</Link></li>
+                                    <li><Link to="/contact">Contact Us</Link></li>
+                                    <li><Link to="/blog">Our Blog</Link></li>
+                                </ul>
+
+                            </div>
+                            <div className="col-lg-2  mt-2">
+                                <ul className="px-1 text-center text-lg-start">
+                                    <label className="footer-links-labels"> Legal</label>
+                                    <li className="mt-2"><Link to="/terms">Terms & Condition</Link></li>
+                                    <li><Link to="/privacy" >Privacy Policy</Link></li>
+                                    <li><Link to="/faq" >FAQs</Link></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div className="row">
+                    <div className="col-lg-10 about-hr offset-lg-1">
                     </div>
                 </div>
-                <hr className="about-hr" />
+
                 <div className="row my-5">
                     <div className="col-1"></div>
                     <div className="col-md-5 d-flex">
                         <div className="">
                             <div className="home-white-logo-img">
-                            <img src={Whitelogo} alt="" className="Whitelogo" />
+                                <img src={Whitelogo} alt="" className="Whitelogo" />
                             </div>
-                            
+
                             <p className="footer-num-mail mt-3 ">00971 4123 4567 | info@bizlantic.com</p>
                             <div className="home-login-btn">
-                                <button className="btn btn-primary">Login or Register</button>
+                                <Link to="/register" className="btn btn-primary Popins-regular">Login or Register</Link>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div className="col-2"></div>
@@ -87,22 +100,34 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <hr  className="about-hr"/>
                 <div className="row">
-                    <div className="col-2 offset-1 ">
-                        <p className="footer-data ">©2025 REGISTERED BIZLANTIC TECH</p>
+                    <div className="col-lg-10 about-hr offset-lg-1">
                     </div>
-                    <div className="col-2">
-                        <p className="footer-data">ALL RIGHTS RESERVED </p>
+                </div>
+                <div className="row mt-3">
+                    <div className="col-md-10 offset-md-1">
+                        <div className="row">
+                            <div className="col-md-3 px-0 text-center  ">
+                                <p className="footer-data mb-0">©2025 REGISTERED BIZLANTIC TECH LLC </p>
+                            </div>
+                            <div className="col-md-4 d-flex px-0 justify-content-center">
+                                <p className="footer-data mb-0">ALL RIGHTS RESERVED  </p>
+                                <p className="px-2 fs-4 "></p>
+                                <p className="footer-data mb-0"> COMPANY NO: 1146883 </p>
+                            </div>
+
+
+                            <div className="col-md-3 px-0 text-center text-md-end offset-md-2">
+                                <p className="footer-data">REVOLUTIONIZED BY
+                                    <a className="text-white" href="https://nexupdigital.com/digital-marketing/">
+                                        NEXUP DIGITAL LLC
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
 
                     </div>
-                    <div className="col-2">
-                        <p className="footer-data"> COMPANY NO: 1146883</p>
-                    </div>    
 
-                    <div className="col-2 offset-md-3">
-                        <p className="footer-data">REVOLUTIONIZED BY <a href="https://nexupdigital.com/digital-marketing/">NEXUP DIGITAL</a></p>
-                    </div>
                 </div>
             </div>
         </div>
